@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +8,87 @@
   <title>Admin Dashboard</title>
 
   <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- Font-Awesome -->
+  <script src="https://kit.fontawesome.com/d4478b4067.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-      <div class="sidebar">
-        <!-- <div class="logo">Dashboard</div>
-        <ul class="side-nav">
-          <li class="side-nav-item">Home</li>
-          <li class="side-nav-item">Profile</li>
-          <li class="side-nav-item">Messages</li>
-          <li class="side-nav-item">History</li>
-          <li class="side-nav-item">Tasks</li>
-        </ul> -->
-        Sidebar
+  <div class="container">
+    <div class="sidebar">
+      <!-- Sidebar -->
+      <div class="logo">
+        <a href="sample-dash.html" class="nav-link">
+          <span class="link-icon"><i class="fa-solid fa-square-h"></i></span>
+          Dashboard
+        </a>
       </div>
-      <header class="header">
-        <!-- <div class="top-dash">
-          <div class="search-bar"></div>
-          <div class="settings"></div>
-        </div>
-        <div class="bottom-dash">
-          <div class="greetings"></div>
-        </div> -->
-        Header
-      </header>
-      <div class="content">
-        <!-- <main class="main"></main>
-        <div class="side-main"></div> -->
-        Content
-      </div>
+      <ul class="side-nav">
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-house fa-fw"></i></span>
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-calendar-days fa-fw"></i></span>
+            <span class="link-text">Appointments</span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-people-group fa-fw"></i></span>
+            <span class="link-text">Patients</span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-clipboard-user fa-fw"></i></span>
+            <span class="link-text">Staff</span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-bed-pulse fa-fw"></i></span>
+            <span class="link-text">Room allotment</span>
+          </a>
+        </li>
+      </ul>
     </div>
+    <header class="header">
+      <!-- Header -->
+      <div class="top-dash">
+        <div class="search-bar">
+          <form>
+            <label for="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+            <input type="search" name="search" id="search">
+          </form>
+        </div>
+        <div class="settings">
+          <div class="profile-image">
+
+          </div>
+          <div class="profile-name">
+            Oso Cubas
+          </div>
+        </div>
+      </div>
+      <div class="bottom-dash">
+        <div class="greetings"></div>
+      </div>
+    </header>
+    <div class="content">
+      <!-- Content -->
+      <main class="main"></main>
+      <div class="side-main"></div>
+    </div>
+  </div>
 </body>
+
 </html>
