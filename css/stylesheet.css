@@ -52,11 +52,16 @@ table {
 }
 
 /* My CSS */
+
+* {
+  font-family: Roboto, sans-serif, Arial;
+}
+
 .container {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr 5fr;
 }
 
@@ -71,6 +76,7 @@ table {
   grid-template-rows: 150px 1fr;
 
   font-family: Roboto, sans-serif, Arial;
+  font-weight: 700;
 }
 
 .sidebar .logo {
@@ -83,7 +89,7 @@ table {
 .logo > a,
 .side-nav-item a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ADE8F4;
 }
 
 .sidebar .side-nav {
@@ -110,8 +116,82 @@ table {
   grid-column: 2 / -1;
   grid-row: 1;
 
+  padding: 10px 32px;
+
+
   display: grid;
   grid-template-rows: 1fr 1fr;
+  align-items: center;
+
+  font-family: Roboto, sans-serif, Arial;
+  font-weight: 700;
+}
+
+.header > * {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-right: 100px;
+}
+
+#search {
+  margin-left: 15px;
+  padding: 5px 10px;
+  flex: 1;
+  max-width: 40vw;
+
+  background-color: #E5F0FF;
+
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.profile-image > img{
+  border-radius: 50%;
+}
+
+.top-dash .settings {
+  justify-self: end;
+  padding-right: 50px;
+}
+
+.profile-image.sm > img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.profile-image.lg > img {
+  width: 70px;
+}
+
+.top-dash .settings,
+.bottom-dash .greetings {
+  display: flex;
+
+  align-items: center;
+}
+
+.bottom-dash .greetings .message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-left: 20px;
+}
+
+.message .intro {
+  font-size: 0.8rem;
+}
+
+.message .profile-name-lg {
+  font-size: 1.5rem;
 }
 
 .container .content {
@@ -119,4 +199,6 @@ table {
   grid-row: 2 / -1;
 
   background-color: #CAF0F8;
+
+  overflow: auto;
 }
