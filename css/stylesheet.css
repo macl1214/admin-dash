@@ -51,6 +51,11 @@ table {
   box-sizing: border-box;
 }
 
+:root {
+  --side-bar-bg: #749eff;
+  --main-content-bg: #fcf6ff;
+}
+
 /* My CSS */
 
 /* * {
@@ -69,7 +74,7 @@ table {
   grid-column: 1;
   grid-row: 1 / -1;
 
-  background-color: #03045E;
+  background-color: var(--side-bar-bg);
   color: #FFFFFF;
 
   display: grid;
@@ -89,7 +94,7 @@ table {
 .logo > a,
 .side-nav-item a {
   text-decoration: none;
-  color: #ADE8F4;
+  color: #FFFFFF;
 }
 
 .sidebar .side-nav {
@@ -198,7 +203,7 @@ table {
   grid-column: 2 / -1;
   grid-row: 2 / -1;
 
-  background-color: #CAF0F8;
+  background-color: var(--main-content-bg);
 
   padding: 16px;
   overflow: auto;
@@ -208,7 +213,7 @@ table {
 }
 
 .content .main {
-  padding: 16px;
+  padding: 8px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
@@ -218,16 +223,18 @@ table {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 8px;
 
   font-family: 'Roboto', sans-serif, Arial;
 }
 
 .health-reports h1 {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .health-reports .report-list {
+  /* width: 75%; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   row-gap: 10px;
