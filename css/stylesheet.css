@@ -53,9 +53,9 @@ table {
 
 /* My CSS */
 
-* {
+/* * {
   font-family: Roboto, sans-serif, Arial;
-}
+} */
 
 .container {
   height: 100vh;
@@ -109,7 +109,7 @@ table {
 
 .link-icon {
   display: inline-block;
-  width: 2.4rem;
+  width: 2.8rem;
 }
 
 .container .header {
@@ -200,5 +200,90 @@ table {
 
   background-color: #CAF0F8;
 
+  padding: 16px;
   overflow: auto;
+  
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+}
+
+.content .main {
+  padding: 16px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
+}
+
+.main .health-reports {
+  /* width: 60%; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-family: 'Roboto', sans-serif, Arial;
+}
+
+.health-reports h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.health-reports .report-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  row-gap: 10px;
+  
+  align-items: center;
+}
+
+.report-list > a {
+  border: 1px solid #FFF;
+  background-color: #FFF;
+  border-radius: 10px;
+
+  width: 130px;
+  height: 180px;
+
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.report-icon > i {
+  font-size: 60px;
+}
+
+.temp-card .report-icon i {
+  font-size: 40px;
+}
+
+.patients-card .report-icon i {
+  color: #5E035D;
+}
+
+.consultation-card .report-icon i {
+  color: #90E0EF;
+}
+
+.inject-card .report-icon i {
+  color: #dc2f02;
+}
+
+.surgery-card .report-icon i {
+  color: #0077B6;
+}
+
+.report-category {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.report-num {
+  font-weight: 700;
+  font-size: 1.4rem;
 }
