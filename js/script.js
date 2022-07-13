@@ -1,4 +1,3 @@
-
 // Chart.js - Circle Chart
 const circle = document.getElementById('circleChart');
 const line = document.getElementById('lineChart');
@@ -47,3 +46,9 @@ const lineChart = new Chart(line, {
     pointHoverBackgroundColor: 'rgb(205, 180, 219)'
   }
 });
+
+// Current date
+const today = new Date();
+const day = String(today.toLocaleString('default', {weekday: 'long'}));
+const appointments = document.querySelector('.appointments .header h1');
+appointments.append(': ' + day);
