@@ -217,20 +217,25 @@ table {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px 1fr));
+  gap: 20px;
+
+  font-family: 'Roboto', sans-serif, Arial;
 }
 
 .main .health-reports {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
   padding: 8px;
 
-  font-family: 'Roboto', sans-serif, Arial;
+  
 }
 
-.health-reports h1 {
+.content-title {
   font-weight: 500;
   font-size: 1.4rem;
+
+  margin-bottom: 20px;
 }
 
 .health-reports .report-list {
@@ -256,6 +261,11 @@ table {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.report-list > a:hover {
+  box-shadow: 0px 0px 5px #BDE0FE;
+  transform: scale(1.05);
 }
 
 .report-icon > i {
@@ -290,6 +300,15 @@ table {
 .report-num {
   font-weight: 700;
   font-size: 1.4rem;
+}
+
+.content .chart-1 {
+  width: clamp(250px, 30%, 400px);
+  padding: 8px;
+
+  background-color: #FFFFFF;
+  border-radius: 10px;
+
 }
 
 .side-main {
