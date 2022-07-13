@@ -15,7 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"
+    integrity="sha512-5m2r+g00HDHnhXQDbRLAfZBwPpPCaK+wPLV6lm8VQ+09ilGdHfXV7IVyKPkLOTfi4vTTUVJnz7ELs7cA87/GMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -57,6 +60,26 @@
           <a href="" class="nav-link">
             <span class="link-icon"><i class="fa-solid fa-bed-pulse fa-fw"></i></span>
             <span class="link-text">Room allotment</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="side-settings">
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-gear fa-fw"></i></span>
+            <span class="link-text">Settings</span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-circle-question fa-fw"></i></span>
+            <span class="link-text">Support</span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="" class="nav-link">
+            <span class="link-icon"><i class="fa-solid fa-shield-heart fa-fw"></i></span>
+            <span class="link-text">Privacy</span>
           </a>
         </li>
       </ul>
@@ -160,11 +183,13 @@
             </a>
           </div>
         </div>
-        <div class="charts">
-          <h1 class="content-title">Age Range</h1>
-          <div class="chart-1">
-            <canvas id="myChart" width="400" height="400"></canvas>
-          </div>
+        <div class="circle-chart">
+          <h1 class="content-title">Patient Ages</h1>
+          <canvas id="circleChart"></canvas>
+        </div>
+        <div class="line-chart">
+          <h1 class="content-title">Covid Cases</h1>
+          <canvas id="lineChart"></canvas>
         </div>
       </main>
       <div class="side-main">
